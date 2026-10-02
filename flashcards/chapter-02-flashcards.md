@@ -1,0 +1,16 @@
+## Chapter 2: Domain 2: Cloud Governance and Domain 4: Organization Management — Flashcards
+
+| # | Front (Question) | Back (Answer) |
+|---|-----------------|---------------|
+| 1 | Order the cloud governance hierarchy from most to least authoritative. | Policy > Standard > Procedure > Guideline. Policy = mandatory intent (WHAT/WHY). Standard = mandatory specific requirement. Procedure = mandatory step-by-step instructions. Guideline = optional recommendation. Exam tip: Guideline is the ONLY non-mandatory item. |
+| 2 | Policy vs Standard — key difference? | Policy = high-level mandatory statement of intent. Standard = mandatory, measurable requirement supporting the policy. Exam tip: 'AES-256 minimum' = standard; 'data must be encrypted' = policy. |
+| 3 | Is a Guideline mandatory? | No — guidelines are recommended best practices, not enforceable. Exam trap: distractors often mislabel a guideline as a mandatory requirement. |
+| 4 | Who typically owns/approves a cloud governance Policy? | Executive management or the Board (e.g., CISO/CIO). Standards and procedures are typically owned by the GRC/security operations teams that implement the policy's intent. |
+| 5 | What does an SCP (AWS) or Organization Policy (GCP) do? | Enforces an organization-wide preventive guardrail applied at the management/org level, overriding any account-level IAM permission. Exam tip: use for 'never allow X anywhere in the org' scenarios. |
+| 6 | Primary benefit of a multi-account cloud structure? | Isolation and blast-radius reduction between environments (dev/test/prod) and business units. Exam tip: multi-account strategy is a governance/security control, not just a billing convenience. |
+| 7 | What must a cloud vendor contract/SLA always define regarding responsibility? | An explicit mapping of shared responsibility (provider vs customer duties), plus right-to-audit, breach notification timelines, and data return/exit terms. |
+| 8 | Main challenge tested for multi-cloud governance? | Maintaining CONSISTENT policy/standard enforcement across providers with differing native control names and tools. Solution: central GRC maps common controls to each provider's implementation. |
+| 9 | Why does the exam test 'exit strategy' in vendor management? | A documented exit plan (data portability format, timeline, retrieval process) must be agreed BEFORE contract signing to avoid vendor lock-in — it's a proactive governance requirement, not an afterthought. |
+| 10 | Procedure vs Standard — which is more operationally detailed? | Procedure. A Standard defines WHAT must be met (mandatory requirement); a Procedure defines HOW to do it step-by-step operationally. |
+| 11 | In a conflict, which wins: an organization-wide guardrail or an individual IAM policy? | The organization-wide guardrail (SCP/Org Policy) always wins — it sets the maximum permission boundary; IAM policies can only grant within it, never exceed it. |
+| 12 | Key elements of vendor/provider due diligence? | Financial stability, compliance certifications (e.g., SOC 2, ISO 27001), SLA terms, security track record, exit terms, sub-processor disclosure. Exam tip: due diligence occurs BEFORE signing AND periodically throughout the relationship. |
